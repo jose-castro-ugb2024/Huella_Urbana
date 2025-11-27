@@ -1,98 +1,153 @@
 <!DOCTYPE html>
 <html lang="es">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Registro - Huella Urbana</title>
-    <link rel="stylesheet" href="./style.css">
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background: #fafafa;
-            margin: 0;
-            padding: 0;
-        }
+  <head>
+    <title>Registro | Huella Urbana</title>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="index,follow" />
+    <meta name="generator" content="GrapesJS Studio" />
 
-        .container {
-            width: 100%;
-            max-width: 400px;
-            margin: 60px auto;
-            background: white;
-            padding: 25px;
-            border-radius: 12px;
-            box-shadow: 0px 5px 20px rgba(0,0,0,0.1);
-        }
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet" />
 
-        h2 {
-            text-align: center;
-            margin-bottom: 25px;
-            color: #333;
-        }
+    <link rel="stylesheet" href="./style.css" />
+  </head>
 
-        label {
-            display: block;
-            margin-top: 15px;
-            font-size: 14px;
-            color: #555;
-        }
+  <body class="gjs-t-body cls-8oo3xo">
+    <header class="header-navbar">
+      <div class="header-container">
+        <a href="./index.html" class="gjs-t-link brand-link">
+          <span class="brand-mark">TC</span>
+          <span class="brand-name">Huella Urbana</span>
+        </a>
 
-        input {
-            width: 100%;
-            padding: 10px;
-            margin-top: 5px;
-            border-radius: 8px;
-            border: 1px solid #ccc;
-            font-size: 15px;
-        }
+        <nav class="header-navigation">
+          <a href="./index.html" class="gjs-t-link nav-link-store">Tienda</a>
+          <a href="./inicio-de-sesin.html" class="gjs-t-link nav-link-auth">Inicio de Sesión</a>
+          <a href="./index.html" class="gjs-t-button primary-store-button">Volver a la Tienda</a>
+        </nav>
+      </div>
+    </header>
 
-        .btn {
-            width: 100%;
-            padding: 12px;
-            margin-top: 25px;
-            border: none;
-            background: #ff6600;
-            color: white;
-            border-radius: 10px;
-            cursor: pointer;
-            font-size: 16px;
-            font-weight: bold;
-        }
+    <main class="main-content">
+      <section class="auth-layout-section">
+        
+        <!-- PANEL LATERAL -->
+        <aside class="gjs-t-border auth-side-panel">
+          <div class="side-text-block">
+            <h1 class="gjs-t-h1">Crear una nueva cuenta</h1>
+            <p class="side-paragraph">
+              Únete a la comunidad de Huella Urbana y disfruta de beneficios exclusivos, compras rápidas y seguimiento de pedidos.
+            </p>
 
-        .btn:hover {
-            background: #ff7e2a;
-        }
+            <ul class="side-benefit-list">
+              <li class="benefit-item">
+                <img src="https://api.iconify.design/lucide-shield.svg" class="benefit-icon" />
+                <span class="benefit-text">Protección de tus datos</span>
+              </li>
 
-        .link {
-            display: block;
-            text-align: center;
-            margin-top: 15px;
-            text-decoration: none;
-            color: #ff6600;
-            font-size: 14px;
-        }
+              <li class="benefit-item">
+                <img src="https://api.iconify.design/lucide-wallet.svg" class="benefit-icon" />
+                <span class="benefit-text">Pagos rápidos</span>
+              </li>
 
-        .link:hover {
-            text-decoration: underline;
-        }
-    </style>
-</head>
+              <li class="benefit-item">
+                <img src="https://api.iconify.design/lucide-smile.svg" class="benefit-icon" />
+                <span class="benefit-text">Ofertas exclusivas</span>
+              </li>
+            </ul>
+          </div>
 
-<body>
-    <div class="container">
-        <h2>Crear Cuenta</h2>
+          <figure class="side-figure">
+            <img src="https://app.grapesjs.com/api/assets/random-image?query=%22shoes%20display%20clean%20sneaker%22&w=800&h=560" class="side-image-desktop" />
+            <img src="https://app.grapesjs.com/api/assets/random-image?query=%22shoes%20display%20clean%20sneaker%22&w=600&h=380" class="side-image-mobile" />
+            <figcaption class="side-figcaption">Nuestra colección te espera</figcaption>
+          </figure>
+        </aside>
 
-        <form action="#" method="POST">
-            <label for="nombre">Nombre completo</label>
-            <input type="text" id="nombre" name="nombre" required placeholder="Juan Pérez">
+        <!-- TARJETA DE REGISTRO -->
+        <article class="gjs-t-border auth-card">
+          <section class="panel-register">
+            <form method="post" class="register-form">
 
-            <label for="email">Correo electrónico</label>
-            <input type="email" id="email" name="email" required placeholder="ejemplo@correo.com">
+              <div class="field-name">
+                <label for="reg-name" class="label-name">Nombre completo</label>
+                <div class="gjs-t-border input-wrapper-name">
+                  <img src="https://api.iconify.design/lucide-user.svg" class="icon-name" />
+                  <input type="text" id="reg-name" name="name" required placeholder="Tu nombre" class="input-name" />
+                </div>
+              </div>
 
-            <label for="pass1">Contraseña</label>
-            <input type="password" id="pass1" name="pass1" required minlength="6">
+              <div class="field-email">
+                <label for="reg-email" class="label-email">Correo electrónico</label>
+                <div class="gjs-t-border input-wrapper-email">
+                  <img src="https://api.iconify.design/lucide-mail.svg" class="icon-email" />
+                  <input type="email" id="reg-email" name="email" required placeholder="tu@correo.com" class="input-email" />
+                </div>
+              </div>
 
-            <label for="pass2">Confirmar contraseña</label>
-            <input type="password" id="pass2" name="pass2" required minlength="6">
+              <div class="field-password">
+                <label for="reg-password" class="label-password">Contraseña</label>
+                <div class="gjs-t-border input-wrapper-password">
+                  <img src="https://api.iconify.design/lucide-lock.svg" class="icon-lock" />
+                  <input type="password" id="reg-password" name="password" required placeholder="••••••••" class="input-password" />
+                </div>
+              </div>
+
+              <div class="field-password-confirm">
+                <label for="reg-password2" class="label-password-confirm">Confirmar contraseña</label>
+                <div class="gjs-t-border input-wrapper-password-confirm">
+                  <img src="https://api.iconify.design/lucide-lock.svg" class="icon-lock" />
+                  <input type="password" id="reg-password2" name="password2" required placeholder="Repite la contraseña" class="input-password" />
+                </div>
+              </div>
+
+              <button type="submit" class="gjs-t-button register-submit-button">
+                Crear cuenta
+              </button>
+            </form>
+
+            <div class="divider-social">
+              <hr class="divider-line-left" />
+              <span class="divider-text">o registrarse con</span>
+              <hr class="divider-line-right" />
+            </div>
+
+            <div class="social-buttons-row">
+              <button type="button" class="gjs-t-border google-button">
+                <img src="https://api.iconify.design/lucide-globe.svg" class="google-icon" />
+                <span>Google</span>
+              </button>
+
+              <button type="button" class="gjs-t-border facebook-button">
+                <img src="https://api.iconify.design/lucide-users.svg" class="facebook-icon" />
+                <span>Facebook</span>
+              </button>
+            </div>
+
+            <div style="text-align:center; margin-top:20px;">
+              ¿Ya tienes una cuenta?
+              <a href="./inicio-de-sesin.html" class="gjs-t-link">Iniciar Sesión</a>
+            </div>
+
+          </section>
+        </article>
+      </section>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-container">
+        <p>© 2025 Huella Urbana. Todos los derechos reservados.</p>
+        <nav class="footer-navigation">
+          <a href="./index.html" class="gjs-t-link">Tienda</a>
+          <a href="./inicio-de-sesin.html" class="gjs-t-link">Inicio de Sesión</a>
+        </nav>
+      </div>
+    </footer>
+  </body>
+</html>
+
 
             <button class="btn" type="submit">Registrarme</button>
         </form>
